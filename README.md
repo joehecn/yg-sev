@@ -1,11 +1,11 @@
 # yg-sev
 
-<!--
+
 [![Build Status](https://travis-ci.org/joehecn/yg-sev.svg?branch=master)](https://travis-ci.org/joehecn/yg-sev)
 [![codecov](https://codecov.io/gh/joehecn/yg-sev/branch/master/graph/badge.svg)](https://codecov.io/gh/joehecn/yg-sev)
 [![Code Climate](https://codeclimate.com/github/joehecn/yg-sev/badges/gpa.svg)](https://codeclimate.com/github/joehecn/yg-sev)
 [![Dependency Status](https://gemnasium.com/badges/github.com/joehecn/yg-sev.svg)](https://gemnasium.com/github.com/joehecn/yg-sev)
--->
+
 
 ## develop
 

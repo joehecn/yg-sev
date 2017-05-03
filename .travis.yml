@@ -1,0 +1,10 @@
+sudo: false
+language: node_js
+node_js:
+  - 6.10.2
+  - 7.9
+script:
+  - make tt-travis
+after_script:
+  - npm install codecov
+  - ./node_modules/.bin/codecov
