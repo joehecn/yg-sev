@@ -1,4 +1,5 @@
-TESTS = test/main.js
+TESTS = test/router/* \
+	test/io/*
 
 lt:
 	@./node_modules/.bin/eslint src test
@@ -6,7 +7,7 @@ lt:
 lint:
 	@./node_modules/.bin/eslint src test --fix
 
-tt:
+tt: lt
 	@./node_modules/.bin/babel-node \
 		./node_modules/.bin/_mocha \
 		$(TESTS) \

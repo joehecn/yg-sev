@@ -10,16 +10,15 @@
 ## develop
 
 ``` bash
-make lt - lint
-make tt - test
-npm start - 启动开发服务器, nodemon watching 文件变化
+make tt # lint && test
+npm start # 启动开发服务器, nodemon watching 文件变化
 ```
 
 ## build
 
 ``` bash
-npm run pub - build
-npm run dist - 启动本地服务
+npm run pub # build
+npm run dist # 启动本地服务
 ```
 
 ## docker
