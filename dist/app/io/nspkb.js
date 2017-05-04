@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.nspkb = undefined;
 
-var _koaSocket = require('koa-socket');
+var _koaSocket = require('../../koa-socket');
 
 var _koaSocket2 = _interopRequireDefault(_koaSocket);
 

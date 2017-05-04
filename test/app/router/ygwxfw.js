@@ -2,7 +2,7 @@
 'use strict'
 
 import supertest from 'supertest'
-import { app } from '../../src/main.js'
+import { app } from '../../../src/main.js'
 
 describe('GET /api/ygwxfw/provincecity', () => {
   it('should be ok', done => {

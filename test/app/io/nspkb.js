@@ -3,7 +3,7 @@
 
 import assert from 'assert'
 import ioc from 'socket.io-client'
-import { app } from '../../src/main.js'
+import { app } from '../../../src/main.js'
 
 const PORT = 3000
 const baseUri = `http://localhost:${PORT}/nspkb`
