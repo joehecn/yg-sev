@@ -2,14 +2,18 @@
 'use strict'
 
 import Router from 'koa-router'
-import { list, isdownload, isprint, djpnote } from '../ctrl/djp.js'
+import { login, list } from '../controller/djp.js'
 
-export const djp = new Router()
+const djp = new Router()
 
-djp.get('/list', list)
+djp.post('/users/login', login)
 
-djp.post('/isdownload', isdownload)
+djp.get('/djps', list)
 
-djp.post('/isprint', isprint)
+// djp.put('/djps/isdownload/:id', isdownload)
 
-djp.post('/djpnote', djpnote)
+// djp.put('/djps/isprint/:id', isprint)
+
+// djp.put('/djps/djpnote/:id', djpnote)
+
+export default djp

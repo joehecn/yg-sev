@@ -4,22 +4,25 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.djp = undefined;
 
 var _koaRouter = require('koa-router');
 
 var _koaRouter2 = _interopRequireDefault(_koaRouter);
 
-var _djp = require('../ctrl/djp.js');
+var _djp = require('../controller/djp.js');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const djp = exports.djp = new _koaRouter2.default();
+const djp = new _koaRouter2.default();
 
-djp.get('/list', _djp.list);
+djp.post('/users/login', _djp.login);
 
-djp.post('/isdownload', _djp.isdownload);
+djp.get('/djps', _djp.list);
 
-djp.post('/isprint', _djp.isprint);
+// djp.put('/djps/isdownload/:id', isdownload)
 
-djp.post('/djpnote', _djp.djpnote);
+// djp.put('/djps/isprint/:id', isprint)
+
+// djp.put('/djps/djpnote/:id', djpnote)
+
+exports.default = djp;

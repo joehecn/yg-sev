@@ -2,13 +2,20 @@
 'use strict'
 
 import Koa from 'koa'
-import { router } from './app/router'
-import { nspzx } from './app/io/nspzx.js'
-import { nspkb } from './app/io/nspkb.js'
+import bodyParser from 'koa-bodyparser'
+import router from './app/router'
+import nspzx from './app/io/nspzx.js'
+import nspkb from './app/io/nspkb.js'
 
+export const service = require('./app/service')
 export const app = new Koa()
 
 app
+  .use(async (ctx, next) => {
+    ctx.state.service = service
+    await next()
+  })
+  .use(bodyParser())
   .use(router.routes())
   .use(router.allowedMethods())
 

@@ -1,4 +1,5 @@
-TESTS = test/app/*
+TESTS = test/app/io/*.test.js \
+	test/app/router/*.test.js
 
 lt:
 	@./node_modules/.bin/eslint src test

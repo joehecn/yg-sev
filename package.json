@@ -13,12 +13,13 @@
     "pub": "make lint && make tt-cov && babel src --out-dir dist",
     "dist": "node dist/main.js",
     "pro": "forever dist/main.js",
-    "socket": "node test/koa-socket/index.js test/koa-socket/*.test.js"
+    "koa-socket": "node test/koa-socket/index.js test/koa-socket/*.test.js"
   },
   "dependencies": {
     "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
     "koa-router": "next",
-    "socket.io": "^1.7.3"
+    "socket.io": "^1.7.4"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -33,7 +34,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "mocha": "^3.3.0",
     "nodemon": "^1.11.0",
-    "socket.io-client": "^1.7.3",
+    "socket.io-client": "^1.7.4",
     "supertest": "^3.0.0",
     "tape": "^4.6.3"
   }
